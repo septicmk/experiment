@@ -1,1 +1,1 @@
-##Record my tricky experiment.
+##Record my experiment.
