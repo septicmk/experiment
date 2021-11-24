@@ -4,7 +4,7 @@ fn main(){
     // a = 13;
 
     // mutable variable
-    let mut b = 12;
+    let mut b = 12.0;
     b=b+1;
 
     // const, should be uppercase

@@ -1,8 +1,9 @@
-fn test_string_slice() {
+fn test_string_slice() -> &str{
     let s = String::from("hello");
     let p1 = &s[0..3];
     let p2 = &s[3..5];
     println!("{}={}+{}", s, p1, p2);
+    return p1;
 }
 
 fn test_array_slice() {
@@ -14,5 +15,7 @@ fn test_array_slice() {
 }
 
 fn main() {
-   test_string_slice();
+   let p = test_string_slice();
+   println!("return slice is {}", p);
+   test_array_slice();
 }
