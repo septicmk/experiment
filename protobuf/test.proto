@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message ConnectSessionRequest {
+  bool cleanup_instance = 1;
+  int32 dangling_timeout_seconds = 2;
+  string version = 3;
+  bool reconnect = 4;
+}
+
+message ConnectSessionResponse {
+  string session_id = 2;
+  string engine_config = 4;
+  repeated string pod_name_list = 5;
+  int32 num_workers = 6;
+  string namespace = 7;
+}
